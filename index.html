@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouGiOh</title>
+    <link rel="stylesheet" href="./asset//index.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav id='headers'>
+        <div class="burger-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul>
+          <li class='list-active'>All</li>
+          <li>Monsters</li>
+          <li>Spells</li>
+          <li>Traps</li>
+          <li>Others</li>
+          <li>
+            <div class="search-card">
+              <div>
+                <input type="text" placeholder="Seacrh">
+              </div>
+              <div>
+                <img src="./asset/image/search.svg" alt="" class="search-icon">
+              </div>
+            </div>
+            <div class="auto-complete">
+              <!-- autocomplete text render here -->
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="main-image">
+        <div class="main-card-image-cnt" data-tilt 
+          data-tilt-glare 
+          data-tilt-max-glare="0.8"
+        >
+          <img src="https://storage.googleapis.com/ygoprodeck.com/pics/6850209.jpg" alt=""  class="main-card-image">
+        </div>
+        <div>
+          <h2 class="card-name">A Deal with Dark Ruler</h2>
+          <p class="attack-defense">attack/defense</p>
+        </div>
+        <h4>Race</h4>
+        <p class="quic-play">Quick-Play</p>
+        <h4>Archetype</h4>
+        <p class="archtype">Archfiend</p>
+        <h4>Description</h4>
+        <!-- <p class="description">(This card is always treated as an \"Archfiend\" card.)\nIf a Level 8 or higher monster under your control was sent to the Graveyard this turn: Special Summon 1 \"Berserk Dragon\" from your hand or Deck.</p> -->
+        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ullam. Asperiores, quia provident? Sunt totam officiis error accusantium est in! Tempora amet dolores, similique dolorum iure mollitia doloremque adipisci enim.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quos officia dignissimos aliquam aliquid ipsam provident magni esse eum ratione eaque voluptas odio, itaque, temporibus totam asperiores. Temporibus, doloremque impedit?
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, alias dolor ullam voluptate corrupti, corporis nam adipisci sapiente reiciendis esse praesentium debitis totam culpa rerum! Voluptates non iusto voluptatibus reprehenderit.
+        </p>
+      </div>
+      <div class="list-card-image-container-main">
+        <div class="list-image">
+          <!-- dynamic element card here -->
+        </div>
+        <div class="pagination-cnt">
+          <div class="prev">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="arrow-back" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M10 3.5a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 1 0v2A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2h8A1.5 1.5 0 0 1 11 3.5v2a.5.5 0 0 1-1 0v-2z"/>
+              <path fill-rule="evenodd" d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
+            </svg>
+          </div>
+          <div class="pagination">
+            <!-- dynamic button pagination here -->
+          </div>
+          <div class="next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="arrow-next" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+              <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </main>
+  
+  <!-- container -->
+  </div>
+
+  <div class="modal">
+    <div class="modal-component">
+      <img src="https://storage.googleapis.com/ygoprodeck.com/pics/6850209.jpg" alt="">
+    </div>
+  </div>
+  <script src="./asset/script.js"></script>
+  <script src='./asset/responsive.js'></script>
+  <script type="text/javascript" src="./asset/vanilla-tilt.js"></script>
+
+</body>
+</html>
